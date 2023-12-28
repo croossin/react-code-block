@@ -1,6 +1,6 @@
 {
   "name": "@roo/react-code-block",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A react code block component",
   "repository": {
     "type": "git",
