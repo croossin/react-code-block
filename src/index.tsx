@@ -20,8 +20,8 @@ function Codeblock({
   return (
     <div>
       {filename && (
-        <div className="text-card-foreground flex h-12 justify-between rounded-t-lg border dark:border-zinc-600">
-          <div className="my-auto pl-4  text-base text-zinc-600 dark:text-zinc-400">
+        <div className="flex h-12 justify-between rounded-t-lg border bg-[#fafafa] dark:border-zinc-600 dark:bg-[#1e1e1e]">
+          <div className="my-auto pl-4 text-base text-zinc-600 dark:text-zinc-400">
             <span>{filename}</span>
           </div>
           <div className="my-auto pr-4">
@@ -89,7 +89,13 @@ function Codeblock({
                   </button>
                 </div>
               )}
-              <pre style={style} className="overflow-x-scroll rounded-lg py-4">
+              <pre
+                style={style}
+                className={clsx(
+                  "overflow-x-scroll py-4 rounded-b-lg",
+                  filename === undefined && "rounded-t-lg"
+                )}
+              >
                 {tokens.map((line, i) => {
                   const shouldHighlight = highlightLines
                     ? highlightLines.includes(i + 1)
