@@ -1,7 +1,8 @@
 import React from "react";
+import "./tailwind.css";
 
-function CodeBlock() {
-  return <div>index</div>;
+function Codeblock() {
+  return <div className="text-red-800">index</div>;
 }
 
-export default CodeBlock;
+export default Codeblock;
