@@ -1,8 +1,5 @@
-import "react-app-polyfill/ie11";
-import * as React from "react";
-import * as ReactDOM from "react-dom";
-import Codeblock from "../.";
-import "./tailwind.css";
+"use client";
+import Codeblock from "../../../.";
 
 const codeBlock = `
 const GroceryItem: React.FC<GroceryItemProps> = ({ item }) => {
@@ -16,9 +13,9 @@ const GroceryItem: React.FC<GroceryItemProps> = ({ item }) => {
 }
 `;
 
-const App = () => {
+export default function Home() {
   return (
-    <div className="h-full w-full p-8 ">
+    <main className="flex min-h-screen flex-col">
       <div className="max-w-3xl mx-auto">
         <div className="flex flex-col space-y-8">
           <div className="space-y-2">
@@ -68,8 +65,6 @@ const App = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
-};
-
-ReactDOM.render(<App />, document.getElementById("root"));
+}
