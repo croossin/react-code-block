@@ -1,5 +1,5 @@
 {
-  "name": "@roo/code-block",
+  "name": "@roo/react-code-block",
   "version": "0.0.1",
   "description": "A react code block component",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/croossin/code-block.git"
+    "url": "git+https://github.com/croossin/react-code-block.git"
   },
   "author": "Chase Roossin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/croossin/code-block/issues"
+    "url": "https://github.com/croossin/react-code-block/issues"
   },
-  "homepage": "https://github.com/croossin/code-block#readme",
+  "homepage": "https://github.com/croossin/react-code-block#readme",
   "devDependencies": {
     "@changesets/cli": "^2.26.0",
     "tsup": "^6.5.0",

@@ -1,5 +1,5 @@
 ---
-"@roo/code-block": patch
+"@roo/react-code-block": patch
 ---
 
 Init
