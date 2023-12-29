@@ -12,10 +12,11 @@
 Install with your favorite package manager
 
 ```bash
+# yarn
 yarn add @roo-app/react-code-block
--- or --
+# pnpm
 pnpm i @roo-app/react-code-block
--- or --
+# npm
 npm i @roo-app/react-code-block
 ```
 
@@ -67,4 +68,4 @@ export default ReactCodeBlockExample;
 
 #### Demo
 
-You can find a demo on [my website](https://roo.app/code-block)
+You can find a demo on [my website](https://roo.app/code-block) or go to the `example/` directory and run it there.
