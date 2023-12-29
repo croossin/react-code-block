@@ -5,6 +5,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Props](#props)
+- [Icons](#icons)
 - [Demo](#demo)
 
 #### Installation
@@ -59,12 +60,28 @@ export default ReactCodeBlockExample;
 
 `CodeBlock` properties extends [HighlightProps](https://github.com/FormidableLabs/prism-react-renderer/blob/f27b612fe71865bde05f66faa3902b4daadce210/packages/prism-react-renderer/src/types.ts#L54-L60) from `prism-react-renderer`. Outside of the existing properties we expose:
 
-| Prop name         | Type                      | Description                                       | Example    | Required |
-| ----------------- | ------------------------- | ------------------------------------------------- | ---------- | -------- |
-| `highlightLines`  | `Array<number>`           | The line numbers you want to highlight            | [1,5,7]    | No       |
-| `filename`        | `string`                  | The filename to show at the top of the code block | MyFile.tsx | No       |
-| `showLineNumbers` | `boolean`                 | To show line number or not                        | `false`    | No       |
-| `onCopy`          | `(value: string) => void` | Callback if user taps on the copy logo            |            | No       |
+| Prop name         | Type                      | Description                                                | Example    | Required |
+| ----------------- | ------------------------- | ---------------------------------------------------------- | ---------- | -------- |
+| `highlightLines`  | `Array<number>`           | The line numbers you want to highlight                     | [1,5,7]    | No       |
+| `filename`        | `string`                  | The filename to show at the top of the code block          | MyFile.tsx | No       |
+| `showLineNumbers` | `boolean`                 | To show line number or not                                 | `false`    | No       |
+| `showFileIcon`    | `boolean`                 | To show the icon left of the filename - must have filename | `false`    | No       |
+| `onCopy`          | `(value: string) => void` | Callback if user taps on the copy logo                     |            | No       |
+
+### Icons
+
+We support a handful of filetype icons. Here is the current list:
+
+- jsx
+- tsx
+- swift
+- kotlin
+- objectivec
+- rust
+- graphql
+- go
+- markdown
+- python
 
 #### Demo
 

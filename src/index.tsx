@@ -2,11 +2,13 @@ import React from "react";
 import "./tailwind.css";
 import { Highlight, HighlightProps, themes } from "prism-react-renderer";
 import clsx from "clsx";
+import { getSvgComponentForLanguage } from "./language-icons/language-icons";
 
 interface Props extends Omit<HighlightProps, "children"> {
   highlightLines?: Array<number>;
   filename?: string;
   showLineNumbers?: boolean;
+  showFileIcon?: boolean;
   onCopy?: (value: string) => void;
 }
 
@@ -14,14 +16,19 @@ function CodeBlock({
   filename,
   highlightLines,
   showLineNumbers = true,
+  showFileIcon = true,
   onCopy,
   ...props
 }: Props) {
+  const SvgComponent = getSvgComponentForLanguage(props.language);
   return (
     <div>
       {filename && (
         <div className="flex h-12 justify-between rounded-t-lg border bg-[#fafafa] dark:border-zinc-600 dark:bg-[#1e1e1e]">
-          <div className="my-auto pl-4 text-base text-zinc-600 dark:text-zinc-400">
+          <div className="flex flex-row space-x-2 my-auto pl-4 text-base text-zinc-600 dark:text-zinc-400">
+            {SvgComponent && showFileIcon && (
+              <SvgComponent className="h-5 w-5 stroke-zinc-500 my-auto fill-zinc-500" />
+            )}
             <span>{filename}</span>
           </div>
           <div className="my-auto pr-4">
