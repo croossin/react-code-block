@@ -1,5 +1,11 @@
 # @roo-app/react-code-block
 
+## 0.0.3
+
+### Patch Changes
+
+- 564da55: Add README.md
+
 ## 0.0.2
 
 ### Patch Changes
