@@ -24,9 +24,9 @@ export default function Home() {
   }, [resolvedTheme]);
 
   return (
-    <main className="flex min-h-screen flex-col bg-white dark:bg-slate-800">
-      <div className="max-w-3xl mx-auto">
-        <div className="flex flex-col space-y-8 py-8">
+    <main>
+      <div className="flex w-full flex-col bg-white dark:bg-slate-800 p-8 mx-auto">
+        <div className="max-w-3xl flex flex-col space-y-8 py-8">
           <button
             type="button"
             className="rounded bg-white px-2 py-1 text-xs font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
