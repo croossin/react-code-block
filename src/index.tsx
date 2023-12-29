@@ -10,7 +10,7 @@ interface Props extends Omit<HighlightProps, "children"> {
   onCopy?: (value: string) => void;
 }
 
-function Codeblock({
+function CodeBlock({
   filename,
   highlightLines,
   showLineNumbers = true,
@@ -137,4 +137,4 @@ function Codeblock({
   );
 }
 
-export default Codeblock;
+export default CodeBlock;
