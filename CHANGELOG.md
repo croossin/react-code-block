@@ -1,5 +1,22 @@
 # @roo-app/react-code-block
 
+## 0.0.5
+
+### Patch Changes
+
+- 4329a46: Adding the following icons:
+
+  - jsx
+  - tsx
+  - swift
+  - kotlin
+  - objectivec
+  - rust
+  - graphql
+  - go
+  - markdown
+  - python
+
 ## 0.0.4
 
 ### Patch Changes
