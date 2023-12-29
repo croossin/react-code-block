@@ -27,7 +27,7 @@
   "module": "dist/react-code-block.esm.js",
   "scripts": {
     "release": "yarn run build && changeset publish",
-    "start": "tsdx watch",
+    "dev": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
