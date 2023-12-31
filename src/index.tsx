@@ -126,7 +126,7 @@ function CodeBlock({
                             {showLineNumbers && (
                               <span
                                 className={clsx(
-                                  "select-none",
+                                  "select-none text-gray-400 dark:text-gray-500 text-sm my-auto",
                                   shouldHighlight ? "-ml-1 mr-5" : "mr-4"
                                 )}
                               >
