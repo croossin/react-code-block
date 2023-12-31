@@ -1,5 +1,11 @@
 # @roo-app/react-code-block
 
+## 0.0.6
+
+### Patch Changes
+
+- 91f3428: Made the line numbers lighter in both light and dark mode as well as a 14px font.
+
 ## 0.0.5
 
 ### Patch Changes
